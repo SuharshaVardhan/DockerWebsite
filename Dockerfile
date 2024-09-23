@@ -2,5 +2,5 @@ FROM ubuntu
 RUN apt update -y
 RUN apt install apache2 -y
 COPY . /var/www/html
-CMD ["usr/sbin/apache1", "-D", "FOREGROUND"]
+CMD ["usr/sbin/apachectl", "-D", "FOREGROUND"]
 
